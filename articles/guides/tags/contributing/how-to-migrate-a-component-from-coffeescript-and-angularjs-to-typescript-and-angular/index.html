@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="img/ico" href="../images/favicon.ico">
 
-    <title>Doubtfire - Articles - Guides - Tags - Staff Guides - Create Manage Student Groups</title>
+    <title>Doubtfire - Articles - Guides - Tags - Contributing - How To Migrate A Component From Coffeescript And Angularjs To Typescript And Angular</title>
 
     <link href="../../../../../stylesheets/main.css" rel="stylesheet" />
   </head>
-  <body class="articles articles_guides articles_guides_tags articles_guides_tags_staff_guides articles_guides_tags_staff_guides_create-manage-student-groups articles_guides_tags_staff_guides_create-manage-student-groups_index">
+  <body class="articles articles_guides articles_guides_tags articles_guides_tags_contributing articles_guides_tags_contributing_how-to-migrate-a-component-from-coffeescript-and-angularjs-to-typescript-and-angular articles_guides_tags_contributing_how-to-migrate-a-component-from-coffeescript-and-angularjs-to-typescript-and-angular_index">
     <nav class="navbar navbar-dark mp-navbar">
   <button class="navbar-toggler collapsed hidden-md-up" type="button" data-toggle="collapse" data-target="#global-navbar-content" aria-controls="global-navbar-content" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fa mp-navbar-toggler-icon"></i>
@@ -30,7 +30,7 @@
     <main id="content">
         <div class="container">
     <div class="row">
-        <h1>Create and manage student groups</h1>
+        <h1>Migrating components from AngularJS to Angular</h1>
         <aside class="mp-sidebar">
     <h3>All Guides</h3>
     <nav role="navigation">
@@ -54,43 +54,20 @@
     </nav>
   </aside>
   <article class="mp-content">
-      <p class="lead">
-        Written by
-            <a href="https://github.com/jakerenzella/">Jake Renzella</a>
-        on Jul 24 2018
-      </p>
-    <p>To manage students in a group, first you need to ensure your unit has group sets setup. A group set is a definition of the types of groups you can have in a unit. To setup a group set:</p>
+    <p>This guide provides some assistance for those looking to migrate a Doubtfire component from AngularJS with CoffeeScript to Angular with Typescript.</p>
 
-<ol>
-<li>Log in to Doubtfire</li>
-<li><p>Select Manage Units from the Administration dropdown:</p>
+<h2>Basic idea</h2>
 
-<p><img alt="Manage Units" src="../../../../../images/articles/staff/manage-students/manage-units.png" style="width: 700px; display:block; margin: 0 auto;"></img></p></li>
-<li><p>Select the unit you wish to adminster</p></li>
-<li><p>Select the <em>group</em> tab:
-<img alt="Manage Groups" src="../../../../../images/articles/staff/manage-students/group-set.png" style="width: 700px; display:block; margin: 0 auto;"></img></p></li>
-<li><p>Select <em>New Group Set</em></p>
+<p>AngularJS was the original version of angular, which has been significantly updated since Doubtfire was originally created. One of the great things about the new Angular is that it provides a migration pathway for AngularJS applications that allows Angular and AngularJS components to work together within the one application.</p>
 
-<p>You will now see a new group created in the Group Set list, select the edit button to edit the following options:</p></li>
-</ol>
-<div class="highlight"><pre class="highlight plaintext"><code>* Name - The name of the group set, by default this is "Group Work"
-* Create Groups - Who has permissions to create new groups in the group set, staff, or staff and students.
-* Manage Groups - Who has permissions to manage groups in the group set, staff, or staff and students.
-* Restrict to Tutorials - if true, only students from the same tutorial can be in a group.
-</code></pre></div>
-<ol>
-<li>Select <em>save</em> then select the group set in the group sets list to view more information:</li>
-</ol>
-<div class="highlight"><pre class="highlight plaintext"><code>* Create a group of students in the group set, by typing a group name, and selecting *Create Group*:
+<p>Basic steps:</p>
 
-&lt;img alt="Create Group" src="../../../../../images/articles/staff/manage-students/new-group.png" style="width: 700px; display:block; margin: 0 auto;"&gt;&lt;/img&gt;
+<ul>
+<li>Identify a component/service to update</li>
+</ul>
 
-* Add students to the group by typing the student name:
+<h2>Where is everything</h2>
 
-&lt;img alt="Adding Students to Group" src="../../../../../images/articles/staff/manage-students/adding-members.png" style="width: 700px; display:block; margin: 0 auto;"&gt;&lt;/img&gt;
-
-You can also export and import CSV files for batch group allocation. To view the correct format of the CSV file for import, you can export the CSV by selecting *Download CSV*.
-</code></pre></div>
   </article>
 
     </div>
